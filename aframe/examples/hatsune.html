@@ -18,7 +18,7 @@
         <a-scene embedded artoolkit='sourceType: webcam;' antialias="true" outline>
                 
 		<!-- <a-marker type='unknown' size='1'>                 -->
-		<a-marker type='pattern' url='../../data/data/patt.hiro' size='1'>                
+		<a-marker-camera preset='hiro'>                
                         <!-- add an hatsune miku -->
                        
 			
@@ -39,7 +39,7 @@
 			                      shadowCameraBottom:-20;
 					      shadowCameraVisible: true;"
 			        position="-2 2 2"></a-entity>
-                </a-marker>
+                </a-marker-camera>
 
                 <a-entity camera></a-entity>
         </a-scene>
