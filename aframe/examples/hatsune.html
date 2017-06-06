@@ -21,12 +21,12 @@
 		<a-marker type='pattern' url='../../data/data/patt.hiro' size='1'>                
                         <!-- add an hatsune miku -->
                         <a-entity scale="0.08 0.08 0.08">
-                                <a-entity mmd='outline: true' afterglow:2.0;>
-                                        <a-entity mmd-model="model:https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/mmd/miku/miku_v2.pmd;
-                                        vmd:https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/mmd/vmds/wavefile_v2.vmd;"
-                                        shadow="cast:true"
-                                        position="0 0 0"></a-entity>
-                                </a-entity>
+                               <a-assets>
+			<a-asset-item id="assetAframe" src="../../aframe/examples/models/pikachu.ply"></a-asset-item>
+		</a-assets>
+
+		<!-- <a-marker type='unknown'> -->
+		<a-entity ply-model="src: #assetAframe" rotation='-90 0 0'scale='0.02 0.02 0.02'></a-entity>
 				<!-- add sounds -->
       				<!-- <a-entity mmd="audio:https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/mmd/audios/wavefile_short.mp3;
                      			audioDelayTime:5.333333333333333; afterglow:2.0;"> -->
