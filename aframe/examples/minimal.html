@@ -3,12 +3,7 @@
 <script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded artoolkit='sourceType: webcam;'>
-	<a-assets>
-			<a-asset-item id="assetAframe" src="models/mybody.ply"></a-asset-item>
-		</a-assets>
-
-		<!-- <a-marker type='unknown'> -->
-		<a-entity ply-model="src: #assetAframe" rotation='-90 0 0'scale='0.02 0.02 0.02'></a-entity>
+	<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
 		
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
